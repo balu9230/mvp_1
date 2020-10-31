@@ -1,0 +1,29 @@
+@import "../../styles/global_style";
+
+.MenuIcon {
+  // border: 1px groove #f0f;
+  padding: 2px;
+}
+
+.MenuIcon div {
+  width: 40px;
+  height: 40px;
+  background-color: $gen_btn_clr;
+  border-radius: 2px;
+  padding: 2px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.MenuIcon > div:hover {
+  background-color: $hover_btn_clr;
+}
+
+.MenuIcon div div {
+  width: 35px;
+  height: 2px;
+  margin: 2px 0;
+  background-color: black;
+  justify-content: space-around;
+}

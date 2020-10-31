@@ -1,0 +1,12 @@
+@import "../../styles/global_style";
+
+.Button {
+    width: $btn-width;
+    margin: 5px;
+    // transition-duration: 0.4s;
+    background-color: $gen_btn_clr;
+}
+
+.Button:hover {
+    background-color: $hover_btn_clr;
+  }

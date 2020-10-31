@@ -1,0 +1,9 @@
+@import "../../styles/global_style";
+
+.Logo {
+    // border: 2px solid #060607;
+    width: 100%;
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+}
