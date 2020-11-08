@@ -10,3 +10,7 @@
 .Button:hover {
     background-color: $hover_btn_clr;
   }
+
+.Button:focus {
+    outline: none;
+}
