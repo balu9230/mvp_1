@@ -9,6 +9,27 @@
   // justify-content: center;
 }
 
+/* Custom Scrollbar - begin */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+// track
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+// handle
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+// handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* Custom Scrollbar - end */
+
   
 
 

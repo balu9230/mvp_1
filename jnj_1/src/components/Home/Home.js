@@ -56,9 +56,11 @@ export default function Home(props) {
 
   return (
     <div className={styles.Home}>
-      <Header />
-      {console.log('inside return: ', mainView)}
-      <NavBar currentView={mainView} clicked={toggleMainView}/>
+      <div className={styles.HomeFixedTop}>
+        <Header />
+        <NavBar currentView={mainView} clicked={toggleMainView}/>
+        <hr/>
+      </div>
       <div className={styles.HomeBody}>
         {mainViewComponent}
       </div>

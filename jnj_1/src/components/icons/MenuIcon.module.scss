@@ -14,6 +14,10 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  @media only screen and (min-width: 600px) {
+    width: 35px;
+    height: 35px;
+}
 }
 
 .MenuIcon > div:hover {
@@ -26,4 +30,7 @@
   margin: 2px 0;
   background-color: black;
   justify-content: space-around;
+  @media only screen and (min-width: 600px) {
+    width: 30px;
+}
 }
