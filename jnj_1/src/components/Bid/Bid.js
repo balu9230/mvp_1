@@ -5,7 +5,7 @@ import BidUnit from './BidUnit/BidUnit';
 // @Dev: user selections must be cached
 export default function Bid (props) {
 
-  // 
+  /*
   let bid_elements = [
     {
       "element_name": "time_slot",
@@ -21,6 +21,16 @@ export default function Bid (props) {
       "user_prompt": "Select all chat durations that are suitable for you and vote."
     }
   ];
+  */
+  let bid_elements = [
+    {
+      "element_name": "time_slot",
+      "title": "Votes for today's Live Time Slot",
+      "chart": null,
+      "user_prompt": "Select all time slots that are suitable for you and vote.",
+      "path": ""
+    }
+  ]
   
   return (
     <div className={styles.Bid}>
