@@ -180,8 +180,14 @@
 }
 
 .VoteButton.Unvotable {
-  border: 1px solid #999999;
-  // background-color:lightskyblue;
+  // border: 1px solid #3B575E;
+  // background-color: #3B575E;
+  background-color: #cccccc;
+  color: #666666;
+  text-shadow: -1px -1px 0 #666666, 1px -1px 0 #666666, -1px 1px 0 #666666, 1px 1px 0 #666666;
+}
+
+.VoteButton.Unvotable:hover {
   background-color: #cccccc;
   color: #666666;
 }

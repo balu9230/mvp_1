@@ -10,7 +10,7 @@ export default function ResponsiveBar (props) {
   let barSize;
   let xFontSize;
   let yFontSize;
-  const data = props.data;
+  const data = JSON.parse(JSON.stringify(props.data));
   
   console.log("Window Inner Width: ", window.innerWidth); // don't remove; chart X-axis does ..
   // .. not seem to be responsive (for mobile screens) without this log line. Not sure why.

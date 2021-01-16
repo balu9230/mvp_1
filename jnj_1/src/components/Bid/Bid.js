@@ -37,7 +37,7 @@ export default function Bid (props) {
       {
         bid_elements.map(
             (el, index) => <BidUnit 
-            key={el["element_name"]} 
+            key={el["element_name"]+"_bidUnit"} 
             parity={index%2 === 0 ? "Even": "Odd"} 
             type={el["element_name"]} params={el}/>
           )
