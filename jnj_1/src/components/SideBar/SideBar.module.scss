@@ -1,0 +1,80 @@
+@import "./../../styles/global_style";
+
+.SideBar {
+  background-color: $app_bg_clr_lighter_1; // #05171b; // $app_bg_clr_lighter_1;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.SideBar.Active {
+  left: 0;
+  transition: .2s;
+}
+
+.SideBar.Hidden {
+  left: -100%;
+  transition: .5s;
+}
+
+.Ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0px;
+  padding: 8px 8px 8px 8px;
+  width: 95%;
+  justify-content: flex-start;
+}
+
+.OptionItem {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  width: 90%;
+  padding-left: 10px;
+}
+
+.OptionItemIcon {
+  color: #F5F5F5;
+}
+
+.OptionItemText {
+  position: relative;
+  text-decoration: none;
+  color: #F5F5F5;
+  margin-left: 15px;
+  font-size: 1em;
+  font-family: $default-font-family;
+  top: 5px;
+}
+
+.OptionItemLinkWrap {
+  border-radius: 2px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.OptionItemLinkWrap:hover {
+  background-color: $thistle_blue;
+}
+
+.OptionItemLinkWrap a {
+  display: inline-flex;
+  width: 100%;
+  text-decoration: none;
+}
+
+// .OptionItem:hover {
+//   background-color: $thistle_blue;
+// }

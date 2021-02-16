@@ -1,6 +1,6 @@
 @import "../../../styles/global_style";
 
-.SignIn {
+.Logout { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,12 +13,12 @@
     }
 }
 
-.SignInBodyWrapper {
+.LogoutBodyWrapper {
     padding-top: 20vh;
     display: flex;
 }
 
-.SignInBody {
+.LogoutBody {
     background-color: $app_bg_clr_lighter_1;
     border-style: solid;
     border-color: $gen_btn_clr;
@@ -32,7 +32,7 @@
     padding-bottom: 5px;
 }
 
-.SignInBody h2 {
+.LogoutBody h2 {
     color: #CCCCCC;
     font-size: 1.2em;
     margin: 5px;
@@ -51,7 +51,7 @@
     }
 }
 
-.SignInForm {
+.LogoutForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,12 +59,10 @@
     margin-bottom: 10px;
 }
 
-.SignInForm.AlignContainer {
+.User {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 2px;
-}
-
-.SignInForm.AlignContainer label {
     margin: 2px;
     font-size: .8em;
     color: white;
@@ -73,21 +71,11 @@
     }
 }
 
-.SignInForm input {
-    margin: 2px;
-    text-align: left;
-    font-size: .8em;
-    border: none;
-    outline: none;
-    border-radius: 2px;
-    padding: 7px;
-    margin-bottom: 10px;
-    @media only screen and (max-width: 600px) {
-        font-size: 1.1em;
-    }
+.User div {
+    margin: 5px;
 }
 
-.SignInSubmit {
+.LogoutSubmit {
   background-color: $gen_btn_clr;
   width: 100%;
   font-size: .8em;
@@ -99,35 +87,6 @@
 }
 }
 
-.SignInSubmit:hover {
+.LogoutSubmit:hover {
     background-color: $hover_btn_clr;
-}
-
-.SignInForm.SignUpRedirect {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5px;
-}
-
-.SignInForm.SignUpRedirect.Label {
-    text-decoration: none;
-    font-size: .8em;
-    @media only screen and (max-width: 600px) {
-        font-size: 1.1em;
-    }
-}
-
-.SignInForm.SignUpRedirect.Link {
-    color: lightblue;
-    font-size: inherit;
-    text-decoration: none;
-    font-size: .8em;
-    @media only screen and (max-width: 600px) {
-        font-size: 1.1em;
-    }
-}
-
-.SignInForm.SignUpRedirect.Link:hover {
-    color: white;
 }

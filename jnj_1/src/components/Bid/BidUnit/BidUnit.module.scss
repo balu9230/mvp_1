@@ -184,12 +184,18 @@
   // background-color: #3B575E;
   background-color: #cccccc;
   color: #666666;
-  text-shadow: -1px -1px 0 #666666, 1px -1px 0 #666666, -1px 1px 0 #666666, 1px 1px 0 #666666;
+  cursor: none;
+  // text-shadow: -1px -1px 0 #666666, 1px -1px 0 #666666, -1px 1px 0 #666666, 1px 1px 0 #666666;
 }
 
 .VoteButton.Unvotable:hover {
   background-color: #cccccc;
   color: #666666;
+  cursor: none;
+}
+
+.VoteButton.Unvotable:focus {
+  outline: none;
 }
 
 .VoteButton:hover {

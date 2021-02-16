@@ -7,6 +7,8 @@ import NavBar from '../NavBar/NavBar';
 import Bid from '../Bid/Bid';
 import Lobby from '../Lobby/Lobby';
 import Chat from '../Chat/Chat';
+import SideBar from '../SideBar/SideBar';
+import Backdrop from '../basic/Backdrop/Backdrop';
 
 export default function Home(props) {
   
@@ -61,6 +63,8 @@ export default function Home(props) {
         <NavBar currentView={mainView} clicked={toggleMainView}/>
         <hr/>
       </div>
+      <SideBar />
+      <Backdrop />
       <div className={styles.HomeBody}>
         {mainViewComponent}
       </div>
