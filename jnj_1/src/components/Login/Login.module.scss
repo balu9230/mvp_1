@@ -1,12 +1,19 @@
 .Login {
-    padding-top: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    @media only screen and (min-width: 600px) {
+        padding: 2px;
+    }
 }
 
 .LoginBody {
+    padding-top: 40vh;
     display: flex;
     flex-grow: 1;
     flex-direction: column;

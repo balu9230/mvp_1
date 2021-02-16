@@ -1,0 +1,92 @@
+@import "../../../styles/global_style";
+
+.Logout { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    @media only screen and (min-width: 600px) {
+        padding: 2px;
+    }
+}
+
+.LogoutBodyWrapper {
+    padding-top: 20vh;
+    display: flex;
+}
+
+.LogoutBody {
+    background-color: $app_bg_clr_lighter_1;
+    border-style: solid;
+    border-color: $gen_btn_clr;
+    box-shadow: 0 0 10px $gen_btn_clr;
+    border-width: 1px;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.LogoutBody h2 {
+    color: #CCCCCC;
+    font-size: 1.2em;
+    margin: 5px;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.6em;
+    }
+}
+
+.Alert {
+    color: $error_text;
+    font-size: .8em;
+    margin: 5px;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.1em;
+    }
+}
+
+.LogoutForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.User {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2px;
+    font-size: .8em;
+    color: white;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.1em;
+    }
+}
+
+.User div {
+    margin: 5px;
+}
+
+.LogoutSubmit {
+  background-color: $gen_btn_clr;
+  width: 100%;
+  font-size: .8em;
+  text-align: center;
+  padding: 5px;
+  outline: none;
+  @media only screen and (max-width: 600px) {
+    font-size: 1.1em;
+}
+}
+
+.LogoutSubmit:hover {
+    background-color: $hover_btn_clr;
+}

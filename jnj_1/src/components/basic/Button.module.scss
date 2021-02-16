@@ -5,8 +5,15 @@
     margin: 5px;
     // transition-duration: 0.4s;
     background-color: $gen_btn_clr;
+    font-size: .8em;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .Button:hover {
     background-color: $hover_btn_clr;
   }
+
+.Button:focus {
+    outline: none;
+}

@@ -1,14 +1,10 @@
 .Header {
-  left: 0px;
-  top: 0px;
   display: flex;
-  position: fixed;
-  padding: 5px;
 }
 
 .HeaderLeft { 
   // border: 1px groove #f0f;
-  width: calc(100vw - 150px - 2px);
+  width: calc(100vw - 150px - 5px);
  }
 
 .HeaderRight {
@@ -17,4 +13,8 @@
   width: 150px;
   display: flex;
   align-items: center;
+  @media only screen and (min-width: 600px) {
+    height: 36px;
+}
  }
+

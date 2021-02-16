@@ -1,0 +1,28 @@
+diff --git a/node_modules/frappe-charts/src/css/charts.scss b/node_modules/frappe-charts/src/css/charts.scss
+index d128335..ea7d283 100644
+--- a/node_modules/frappe-charts/src/css/charts.scss
++++ b/node_modules/frappe-charts/src/css/charts.scss
+@@ -1,13 +1,13 @@
+ .chart-container {
+ 	position: relative; /* for absolutely positioned tooltip */
+-
++  background-color: #AA968A !important;
+ 	/* https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/ */
+ 	font-family: -apple-system, BlinkMacSystemFont,
+ 		'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+ 		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+ 
+ 	.axis, .chart-label {
+-		fill: #555b51;
++		fill: #575b51;
+ 
+ 		line {
+ 			stroke: #dadada;
+@@ -114,3 +114,7 @@
+ 		}
+ 	}
+ }
++
++svg.frappe-chart.chart {
++	background-color: #AA968A !important;
++}

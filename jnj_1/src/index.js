@@ -4,13 +4,20 @@ import 'normalize.css';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
+import { AuthProvider } from './components/contexts/AuthContext';
+import { RecoilRoot } from 'recoil';
 import * as serviceWorker from './serviceWorker';
+import { DebugObserver } from './recoilDebug';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <RecoilRoot>
+        <Router>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+        </Router>
+    </RecoilRoot> 
   </React.StrictMode>,
   document.getElementById('root')
 );
