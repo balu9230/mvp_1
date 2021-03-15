@@ -1,5 +1,8 @@
 import { atom, selector } from 'recoil';
 
+/*
+ * SideBar Toggle
+ */
 export const sideBarActiveState = atom({
   key: "sideBarActiveState",
   default: false
@@ -12,3 +15,6 @@ export const toggleSideBarState = selector({
     set(sideBarActiveState, !sideBarCurrentState);
   }
 });
+
+
+

@@ -1,4 +1,4 @@
-/**
+/*
  * Code referenced from Youtube channel: Web Dev Simplified - "React Authentication Crash Course With Firebase And Routing"
  */
 import React, { useContext, useState, useEffect } from 'react';
