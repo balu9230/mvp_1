@@ -1,0 +1,236 @@
+@import '../../../../styles/global_style';
+
+.CardLayout {
+  width: 100%;
+  height: fit-content;
+}
+
+.Card {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .9em;
+  background-color: #3b585e;
+  margin: 5px;
+}
+
+.Question {
+  border: chartreuse;
+  margin-top: 5px;
+}
+
+.SelectionSection {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 5px;
+}
+
+.SelectNCounter {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Select {
+  display: inline-block;
+  width: 110px;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    width: 70px;
+  }
+  height: 30px;
+  padding: 2px;
+  background-color: $app_bg_clr_lighter_1;
+  border-style: none;
+  border-radius: 5px;
+  color: beige;
+}
+
+.Select:focus {
+  outline: none;
+}
+
+.Counter {
+  height: 30px;
+  padding: 2px;
+  color: yellow;
+  align-items: center;
+  margin-left: 3px;
+}
+
+.RangeSection {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.SliderInput {
+  position: absolute;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  --webkit-appearance: none;
+  opacity: 1;
+}
+
+// .SliderInput::-webkit-slider-thumb {
+//   pointer-events: all;
+//   --webkit-appearance: none;
+//   z-index: 5;
+// }
+
+.SliderInput.One {
+  top: 0px;
+}
+
+.SliderInput.Two {
+  top: 0px;
+}
+
+.SliderInput.Three {
+  top: 0px;
+}
+
+.RangesNThumb {
+  position: relative;
+  display: inline-flex;
+  height: 8px;
+  border-radius: 3px;
+  width: 100%;
+  background-color: yellow;
+  pointer-events: all;
+}
+
+.vertiAlign {
+  position: absolute;
+  top: -3.5px;
+  width: inherit;
+}
+
+.Thumb {
+  position: absolute;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  background-color: #6200ee;
+  border-radius: 50%;
+  opacity: .9;
+  transform: translateX(-7px);
+  pointer-events: all;
+  // top: -6px;
+}
+
+.Left1 { left: 1%; }
+.Left2 { left: 2%; }
+.Left3 { left: 3%; }
+.Left4 { left: 4%; }
+.Left5 { left: 5%; }
+.Left6 { left: 6%; }
+.Left7 { left: 7%; }
+.Left8 { left: 8%; }
+.Left9 { left: 9%; }
+.Left10 { left: 10%; }
+.Left11 { left: 11%; }
+.Left12 { left: 12%; }
+.Left13 { left: 13%; }
+.Left14 { left: 14%; }
+.Left15 { left: 15%; }
+.Left16 { left: 16%; }
+.Left17 { left: 17%; }
+.Left18 { left: 18%; }
+.Left19 { left: 19%; }
+.Left20 { left: 20%; }
+.Left21 { left: 21%; }
+.Left22 { left: 22%; }
+.Left23 { left: 23%; }
+.Left24 { left: 24%; }
+.Left25 { left: 25%; }
+.Left26 { left: 26%; }
+.Left27 { left: 27%; }
+.Left28 { left: 28%; }
+.Left29 { left: 29%; }
+.Left30 { left: 30%; }
+.Left31 { left: 31%; }
+.Left32 { left: 32%; }
+.Left33 { left: 33%; }
+.Left34 { left: 34%; }
+.Left35 { left: 35%; }
+.Left36 { left: 36%; }
+.Left37 { left: 37%; }
+.Left38 { left: 38%; }
+.Left39 { left: 39%; }
+.Left40 { left: 40%; }
+.Left41 { left: 41%; }
+.Left42 { left: 42%; }
+.Left43 { left: 43%; }
+.Left44 { left: 44%; }
+.Left45 { left: 45%; }
+.Left46 { left: 46%; }
+.Left47 { left: 47%; }
+.Left48 { left: 48%; }
+.Left49 { left: 49%; }
+.Left50 { left: 50%; }
+.Left51 { left: 51%; }
+.Left52 { left: 52%; }
+.Left53 { left: 53%; }
+.Left54 { left: 54%; }
+.Left55 { left: 55%; }
+.Left56 { left: 56%; }
+.Left57 { left: 57%; }
+.Left58 { left: 58%; }
+.Left59 { left: 59%; }
+.Left60 { left: 60%; }
+.Left61 { left: 61%; }
+.Left62 { left: 62%; }
+.Left63 { left: 63%; }
+.Left64 { left: 64%; }
+.Left65 { left: 65%; }
+.Left66 { left: 66%; }
+.Left67 { left: 67%; }
+.Left68 { left: 68%; }
+.Left69 { left: 69%; }
+.Left70 { left: 70%; }
+.Left71 { left: 71%; }
+.Left72 { left: 72%; }
+.Left73 { left: 73%; }
+.Left74 { left: 74%; }
+.Left75 { left: 75%; }
+.Left76 { left: 76%; }
+.Left77 { left: 77%; }
+.Left78 { left: 78%; }
+.Left79 { left: 79%; }
+.Left80 { left: 80%; }
+.Left81 { left: 81%; }
+.Left82 { left: 82%; }
+.Left83 { left: 83%; }
+.Left84 { left: 84%; }
+.Left85 { left: 85%; }
+.Left86 { left: 86%; }
+.Left87 { left: 87%; }
+.Left88 { left: 88%; }
+.Left89 { left: 89%; }
+.Left90 { left: 90%; }
+.Left91 { left: 91%; }
+.Left92 { left: 92%; }
+.Left93 { left: 93%; }
+.Left94 { left: 94%; }
+.Left95 { left: 95%; }
+.Left96 { left: 96%; }
+.Left97 { left: 97%; }
+.Left98 { left: 98%; }
+.Left99 { left: 99%; }
+.Left100 { left: 100%; }
+
+
