@@ -3,22 +3,25 @@
 .CardLayout {
   width: 100%;
   height: fit-content;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
 }
 
 .Card {
-  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: .9em;
-  background-color: #3b585e;
-  margin: 5px;
+  color: beige;
+  margin: 8px;
+  border: 3px outset $app_bg_clr_lighter_1;
+  padding: 3px;
 }
 
 .Question {
-  border: chartreuse;
   margin-top: 5px;
 }
 
@@ -37,7 +40,6 @@
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .Select {
@@ -60,76 +62,83 @@
 
 .Counter {
   height: 30px;
+  line-height: 23px;
   padding: 2px;
   color: yellow;
   align-items: center;
   margin-left: 3px;
+  // @font-face{
+  //   font-family: 'digital-7';
+  //   src: url("../../../../styles/digital-7.regular.ttf") format("truetype");
+  //  }
+  font-family: 'Orbitron', sans-serif;
+  transform: scale(.7, 1);
+  letter-spacing: 1px;
 }
 
 .RangeSection {
   position: relative;
-  display: inline-block;
   width: 90%;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 
 .SliderInput {
+  -webkit-appearance: none;
   position: absolute;
-  z-index: 2;
   height: 10px;
   width: 100%;
-  background-color: white;
-  --webkit-appearance: none;
-  opacity: 1;
-}
-
-// .SliderInput::-webkit-slider-thumb {
-//   pointer-events: all;
-//   --webkit-appearance: none;
-//   z-index: 5;
-// }
-
-.SliderInput.One {
+  background-color: #A98743;
+  // background-color: $thistle_blue;
+  opacity: .3;
+  pointer-events: none;
   top: 0px;
+  left: 0px;
+  border-radius: 5px;
 }
 
-.SliderInput.Two {
-  top: 0px;
-}
-
-.SliderInput.Three {
-  top: 0px;
-}
-
-.RangesNThumb {
-  position: relative;
-  display: inline-flex;
-  height: 8px;
-  border-radius: 3px;
-  width: 100%;
-  background-color: yellow;
+.SliderInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 40px;
   pointer-events: all;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  //color: black;
+  background-color: black;
 }
 
-.vertiAlign {
-  position: absolute;
-  top: -3.5px;
-  width: inherit;
+.SliderInput:focus {
+  outline: none;
 }
+
+// .SliderInput.One::-webkit-slider-thumb {
+//   background-image: linear-gradient(red, black);
+// }
 
 .Thumb {
   position: absolute;
-  z-index: 2;
-  width: 15px;
-  height: 15px;
-  background-color: #6200ee;
+  z-index: 0;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  opacity: .9;
-  transform: translateX(-7px);
+  opacity: 1;
+  transform: translateY(-3px);
   pointer-events: all;
-  // top: -6px;
+  top: 0px;
+  background: black;
+}
+
+.Thumb.One {
+  border: ridge;
+}
+
+.Thumb.Two {
+  border: ridge;
+}
+
+.Thumb.Three {
+  border: ridge;
 }
 
 .Left1 { left: 1%; }
@@ -162,75 +171,74 @@
 .Left28 { left: 28%; }
 .Left29 { left: 29%; }
 .Left30 { left: 30%; }
-.Left31 { left: 31%; }
-.Left32 { left: 32%; }
-.Left33 { left: 33%; }
-.Left34 { left: 34%; }
-.Left35 { left: 35%; }
-.Left36 { left: 36%; }
-.Left37 { left: 37%; }
-.Left38 { left: 38%; }
-.Left39 { left: 39%; }
-.Left40 { left: 40%; }
-.Left41 { left: 41%; }
-.Left42 { left: 42%; }
-.Left43 { left: 43%; }
-.Left44 { left: 44%; }
-.Left45 { left: 45%; }
-.Left46 { left: 46%; }
-.Left47 { left: 47%; }
-.Left48 { left: 48%; }
-.Left49 { left: 49%; }
-.Left50 { left: 50%; }
-.Left51 { left: 51%; }
-.Left52 { left: 52%; }
-.Left53 { left: 53%; }
-.Left54 { left: 54%; }
-.Left55 { left: 55%; }
-.Left56 { left: 56%; }
-.Left57 { left: 57%; }
-.Left58 { left: 58%; }
-.Left59 { left: 59%; }
-.Left60 { left: 60%; }
-.Left61 { left: 61%; }
-.Left62 { left: 62%; }
-.Left63 { left: 63%; }
-.Left64 { left: 64%; }
-.Left65 { left: 65%; }
-.Left66 { left: 66%; }
-.Left67 { left: 67%; }
-.Left68 { left: 68%; }
-.Left69 { left: 69%; }
-.Left70 { left: 70%; }
-.Left71 { left: 71%; }
-.Left72 { left: 72%; }
-.Left73 { left: 73%; }
-.Left74 { left: 74%; }
-.Left75 { left: 75%; }
-.Left76 { left: 76%; }
-.Left77 { left: 77%; }
-.Left78 { left: 78%; }
-.Left79 { left: 79%; }
-.Left80 { left: 80%; }
-.Left81 { left: 81%; }
-.Left82 { left: 82%; }
-.Left83 { left: 83%; }
-.Left84 { left: 84%; }
-.Left85 { left: 85%; }
-.Left86 { left: 86%; }
-.Left87 { left: 87%; }
-.Left88 { left: 88%; }
-.Left89 { left: 89%; }
-.Left90 { left: 90%; }
-.Left91 { left: 91%; }
-.Left92 { left: 92%; }
-.Left93 { left: 93%; }
-.Left94 { left: 94%; }
-.Left95 { left: 95%; }
-.Left96 { left: 96%; }
-.Left97 { left: 97%; }
-.Left98 { left: 98%; }
-.Left99 { left: 99%; }
-.Left100 { left: 100%; }
-
+.Left31 { left: 30%; }
+.Left32 { left: 31%; }
+.Left33 { left: 32%; }
+.Left34 { left: 33%; }
+.Left35 { left: 34%; }
+.Left36 { left: 35%; }
+.Left37 { left: 36%; }
+.Left38 { left: 37%; }
+.Left39 { left: 38%; }
+.Left40 { left: 39%; }
+.Left41 { left: 40%; }
+.Left42 { left: 41%; }
+.Left43 { left: 42%; }
+.Left44 { left: 43%; }
+.Left45 { left: 44%; }
+.Left46 { left: 45%; }
+.Left47 { left: 46%; }
+.Left48 { left: 47%; }
+.Left49 { left: 48%; }
+.Left50 { left: 49%; }
+.Left51 { left: 50%; }
+.Left52 { left: 51%; }
+.Left53 { left: 52%; }
+.Left54 { left: 53%; }
+.Left55 { left: 54%; }
+.Left56 { left: 55%; }
+.Left57 { left: 56%; }
+.Left58 { left: 57%; }
+.Left59 { left: 58%; }
+.Left60 { left: 59%; }
+.Left61 { left: 60%; }
+.Left62 { left: 61%; }
+.Left63 { left: 62%; }
+.Left64 { left: 63%; }
+.Left65 { left: 64%; }
+.Left66 { left: 65%; }
+.Left67 { left: 66%; }
+.Left68 { left: 67%; }
+.Left69 { left: 68%; }
+.Left70 { left: 69%; }
+.Left71 { left: 70%; }
+.Left72 { left: 71%; }
+.Left73 { left: 72%; }
+.Left74 { left: 73%; }
+.Left75 { left: 74%; }
+.Left76 { left: 75%; }
+.Left77 { left: 76%; }
+.Left78 { left: 77%; }
+.Left79 { left: 78%; }
+.Left80 { left: 79%; }
+.Left81 { left: 80%; }
+.Left82 { left: 81%; }
+.Left83 { left: 82%; }
+.Left84 { left: 83%; }
+.Left85 { left: 84%; }
+.Left86 { left: 85%; }
+.Left87 { left: 86%; }
+.Left88 { left: 87%; }
+.Left89 { left: 88%; }
+.Left90 { left: 89%; }
+.Left91 { left: 90%; }
+.Left92 { left: 91%; }
+.Left93 { left: 92%; }
+.Left94 { left: 93%; }
+.Left95 { left: 94%; }
+.Left96 { left: 95%; }
+.Left97 { left: 96%; }
+.Left98 { left: 97%; }
+.Left99 { left: 98%; }
+.Left100 { left: 98%; }
 
