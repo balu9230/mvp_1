@@ -46,7 +46,8 @@
   display: inline-block;
   width: 110px;
   @media only screen and (max-width: $breakpoint-tablet) {
-    width: 70px;
+    width: 55px;
+    font-size: .7em;
   }
   height: 30px;
   padding: 2px;
