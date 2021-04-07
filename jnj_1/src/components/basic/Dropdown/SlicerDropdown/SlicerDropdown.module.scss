@@ -33,6 +33,10 @@
   justify-content: space-around;
   margin: 5px;
   padding: 5px;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    display: inline-block;
+    justify-content: flex-start;
+  }
 }
 
 .SelectNCounter {
@@ -40,22 +44,48 @@
   height: fit-content;
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: $breakpoint-tablet) {
+    width: 30vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-flex;
+    justify-content: flex-start;
+  }
 }
 
 .Select {
   display: inline-block;
   width: 110px;
   @media only screen and (max-width: $breakpoint-tablet) {
-    width: 55px;
-    font-size: .7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   height: 30px;
   padding: 2px;
   background-color: $app_bg_clr_lighter_1;
-  border-style: none;
+  border-style: none; 
   border-radius: 5px;
   color: beige;
 }
+
+// .Select {
+//   display: inline-block;
+//   width: 110px;
+//   @media only screen and (max-width: $breakpoint-tablet) {
+//     width: 55px;
+//     font-size: .7em;
+//   }
+//   height: 30px;
+//   padding: 2px;
+//   background-color: $app_bg_clr_lighter_1;
+//   border-style: none; 
+//   border-radius: 5px;
+//   color: beige;
+// }
 
 .Select:focus {
   outline: none;

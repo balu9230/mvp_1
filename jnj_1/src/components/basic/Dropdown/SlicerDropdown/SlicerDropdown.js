@@ -16,7 +16,6 @@ export default function SlicerDropdown({ props }) {
   const [valTwo, setValTwo] = useState(62);
   const [valThree, setValThree] = useState(87);
 
-  let [val1, val2, val3, val4] = [3, 3, 3, 3];
   let total = 12;
 
   function HandlerValOne(e) {
@@ -50,10 +49,10 @@ export default function SlicerDropdown({ props }) {
         <div className={styles.Question}>{question}</div>
         {/* <div className={styles.Question}>{helper_info}</div> */}
         <div className={styles.SelectionSection}>
-          <SelectNCounter id={1} count={valOne} options_data={options_data} select_disabled={select_disabled}/>
-          <SelectNCounter id={2} count={valTwo-valOne} options_data={options_data} select_disabled={select_disabled}/>
-          <SelectNCounter id={3} count={valThree-valTwo} options_data={options_data} select_disabled={select_disabled}/>
-          <SelectNCounter id={4} count={100-valThree} options_data={options_data} select_disabled={select_disabled}/>
+          <SelectNCounter id={1} count={Math.round(valOne * total * .01)} options_data={options_data} select_disabled={select_disabled}/>
+          <SelectNCounter id={2} count={Math.round((valTwo-valOne) * total * .01)} options_data={options_data} select_disabled={select_disabled}/>
+          <SelectNCounter id={3} count={Math.round((valThree-valTwo) * total * .01)} options_data={options_data} select_disabled={select_disabled}/>
+          <SelectNCounter id={4} count={Math.round((100-valThree) * total * .01)} options_data={options_data} select_disabled={select_disabled}/>
         </div>
         <div className={styles.RangeSection}>
           <div className={cn(styles.Thumb, styles.One, styles["Left"+valOne])}></div>
