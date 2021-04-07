@@ -86,8 +86,9 @@ export default function MyProfile() {
           console.log(err);
           setError(`Error occurred during geolocation. Kindly select country manually.`);
           setTimeout(() => {
-            console.log("Vanishing the error prompt");
+            console.log("Vanishing the error prompt & loader");
             setError("");
+            setLoading(false);
           }, 2000);
         }
       );
@@ -200,6 +201,7 @@ export default function MyProfile() {
                     <SlicerDropdown key={'my_profile_slicer_dropdown_'+idx} props={{
                         'id': idx,
                         'question': el['question'],
+                        'helper_info': el['helper_info'],
                         'options_data': spOptions[el['question_id']],
                         'select_disabled': selectDisabled,
                       }}/>

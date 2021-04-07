@@ -13,8 +13,8 @@ export function getCountrySpecificSpecialQuestions(country) {
 const QUESTION_BANK = [
   {
     "question_id": "1",
-    "question": "Describe your typical weekday (Mon-Fri). Set up the total time you spend across your top 4 activities. " + 
-                "Then, allocate where most of your time goes between your top 4 activities.",
+    "question": "Describe your typical weekday (Mon-Fri). Specify total hours spent on your top 4 activities. " + 
+                "Then, split them between your top 4 activities.",
     "type": "slicer_dropdown",
     "supported_countries": [DEFAULT_COUNTRY, "USA", "UK", "India"],
     "helper_info": "For example, if I spend a total of 14h/day between my 4 top activities, then I'd set 14 as total " +
@@ -22,8 +22,8 @@ const QUESTION_BANK = [
   },
   {
     "question_id": "2",
-    "question": "Describe your typical weekend (Sat/Sun/holiday). Set up the total time you spend across your top 4 activities. " + 
-                "Then, allocate where most of your time goes between your top 4 activities.",
+    "question": "Describe your typical weekend (Sat/Sun/holiday). Specify total hours spent on your top 4 activities. " + 
+                "Then, split them between your top 4 activities.",
     "type": "slicer_dropdown",
     "supported_countries": [DEFAULT_COUNTRY, "USA", "UK", "India"],
     "helper_info": "For example, if I spend a total of 12h/day between my 4 top activities, then I'd set 14 as total " +

@@ -7,6 +7,7 @@ export default function SlicerDropdown({ props }) {
   const {
     id,
     question,
+    helper_info,
     options_data,
     select_disabled,
   } = props;
@@ -47,6 +48,7 @@ export default function SlicerDropdown({ props }) {
     <div className={styles.CardLayout}>
       <div className={styles.Card}>
         <div className={styles.Question}>{question}</div>
+        {/* <div className={styles.Question}>{helper_info}</div> */}
         <div className={styles.SelectionSection}>
           <SelectNCounter id={1} count={valOne} options_data={options_data} select_disabled={select_disabled}/>
           <SelectNCounter id={2} count={valTwo-valOne} options_data={options_data} select_disabled={select_disabled}/>
@@ -54,21 +56,15 @@ export default function SlicerDropdown({ props }) {
           <SelectNCounter id={4} count={100-valThree} options_data={options_data} select_disabled={select_disabled}/>
         </div>
         <div className={styles.RangeSection}>
-          {/* codementor issue */}
-          <input className={cn(styles.SliderInput, styles.One)} type="range" id="ip_1" 
+          <div className={cn(styles.Thumb, styles.One, styles["Left"+valOne])}></div>
+          <div className={cn(styles.Thumb, styles.Two, styles["Left"+valTwo])}></div>
+          <div className={cn(styles.Thumb, styles.Three, styles["Left"+valThree])}></div>
+          <input className={styles.SliderInput} type="range" id="ip_1" 
             min="0" max="100" value={valOne.toString()} onChange={HandlerValOne}></input>
-          <input className={cn(styles.SliderInput, styles.Two)} type="range" id="ip_2" 
+          <input className={styles.SliderInput} type="range" id="ip_2" 
             min="0" max="100" value={valTwo.toString()} onChange={HandlerValTwo}></input>
-          <input className={cn(styles.SliderInput, styles.Three)} type="range" id="ip_3" 
-            min="0" max="100" value={valThree.toString()} onChange={HandlerValThree}></input>
-          <div className={styles.RangesNThumb}>
-            <div className={styles.vertiAlign}>
-              <div className={cn(styles.Thumb, styles["Left"+valOne])}></div>
-              <div className={cn(styles.Thumb, styles["Left"+valTwo])}></div>
-              <div className={cn(styles.Thumb, styles["Left"+valThree])}></div>
-            </div>
-          </div>
-          {/* codementor issue */}
+          <input className={styles.SliderInput} type="range" id="ip_3" 
+            min="0" max="100" value={valThree.toString()} onChange={HandlerValThree}></input>  
         </div>
       </div>
     </div>
