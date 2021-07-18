@@ -1,20 +1,23 @@
 .Header {
   display: flex;
+  flex-direction: row;
 }
 
 .HeaderLeft { 
   // border: 1px groove #f0f;
   width: calc(100vw - 150px - 5px);
- }
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
 
 .HeaderRight {
-  // border: 1px groove #f0f;
   height: 48px;
   width: 150px;
   display: flex;
   align-items: center;
   @media only screen and (min-width: 600px) {
     height: 36px;
-}
  }
-
+}

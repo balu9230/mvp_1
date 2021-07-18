@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import cn from 'classnames';
 import styles from './Logout.module.scss';
 
-import Header from './../../Header/Header';
+import Header from './../../Headers/Header/Header';
 import SideBar from './../../SideBar/SideBar';
 import Backdrop from './../../basic/Backdrop/Backdrop';
 

@@ -15,6 +15,3 @@ export const toggleSideBarState = selector({
     set(sideBarActiveState, !sideBarCurrentState);
   }
 });
-
-
-

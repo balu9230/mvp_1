@@ -1,0 +1,55 @@
+@import "../../../styles/global_style";
+
+.HeaderSeated {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.BackButton {
+  flex-grow: 0;
+  display: flex;
+  width: 60px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 5px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.BackButton:hover {
+  background-color: $black_backlight;
+  cursor: pointer;
+}
+
+.LogoWrap {
+  flex-grow: 0;
+  height: 35px; // 48px;
+  width: 110px; // 150px
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 3%;
+  @media only screen and (max-width: 600px) {
+    height: 36px;
+    right: 5%;
+ }
+}
+
+.FillerItemLeft {
+  min-width: 5px;
+  flex-grow: 1;
+}
+
+.FillerItemRight {
+  min-width: 5px;
+  flex-grow: 1;
+}

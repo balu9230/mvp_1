@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './DatePreferences.module.scss';
 
-import Header from '../../Header/Header';
+import Header from '../../Headers/Header/Header';
 import SideBar from '../../SideBar/SideBar';
 import Backdrop from '../../basic/Backdrop/Backdrop';
 

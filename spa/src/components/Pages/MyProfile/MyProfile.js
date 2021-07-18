@@ -9,7 +9,7 @@ import { BiErrorCircle } from 'react-icons/bi';
 import { useRecoilState } from 'recoil';
 import { userProfileState } from '../../globalState/userState';
 
-import Header from '../../Header/Header';
+import Header from '../../Headers/Header/Header';
 import SideBar from '../../SideBar/SideBar';
 import Backdrop from '../../basic/Backdrop/Backdrop';
 import JackSpinner from '../../basic/Spinner/JackSpinner';

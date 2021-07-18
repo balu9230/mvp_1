@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Guest.module.scss';
 import { Switch, Route, NavLink, Link } from 'react-router-dom';
 
-import Header from '../../Header/Header';
+import Header from '../../Headers/Header/Header';
 
 export default function Guest(props) {
 

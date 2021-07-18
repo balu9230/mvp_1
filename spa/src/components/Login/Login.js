@@ -3,7 +3,7 @@ import styles from './Login.module.scss';
 // import { motion } from 'framer-motion';
 import { Switch, Route, Link, useHistory } from 'react-router-dom';
 
-import Header from '../Header/Header';
+import Header from '../Headers/Header/Header';
 import Button from '../basic/Button';
 
 export default function Login(props) {

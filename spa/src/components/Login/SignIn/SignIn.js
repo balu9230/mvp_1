@@ -4,7 +4,7 @@ import cn from 'classnames';
 import styles from './SignIn.module.scss';
 
 import { useAuth } from '../../contexts/AuthContext';
-import Header from '../../Header/Header';
+import Header from '../../Headers/Header/Header';
 
 export default function SignIn(props) {
 

@@ -259,50 +259,51 @@ export default function BidUnit(props) {
   console.log(voteStatus); console.log(expiryStatus); console.log(votable);
   return (
     <div className={`${styles.BidUnit} ${parity}`}>
-      <div className={styles.Title}>{title}</div>
-      {
-        (data === undefined || selectedChoices === undefined || selectedChoices === {}) ?
-         <div className={styles.NoData}></div>
-        :
-        <>
-          <div className={styles.Chart}>
-            <ResponsiveBar data={data}/>
-          </div>
-          <div className={styles.RefreshBlock}>
-            <div className={styles.LastRefreshed}>last refreshed 10 minutes ago</div>
-            <motion.button className={styles.Refresh} onClick={refreshChart}>Refresh</motion.button>
-          </div>
-          <div className={styles.VoteBlock}>
-            <div className={styles.VoteSubBlock}>
-              <div className={cn(styles.RegisteredVote, {[styles.Voted] : voteStatus})}>{voteStatus ? "Voted" : "Not Voted"}</div>
-              <motion.button className={cn(styles.VoteButton, {[styles.Unvotable] : !votable})} value="Voted" disabled={!votable} onClick={registerVote}>Vote!</motion.button>
+      {/* <div className={styles.BidBox}> */}
+        <div className={styles.Title}>{title}</div>
+        {
+          (data === undefined || selectedChoices === undefined || selectedChoices === {}) ?
+          <div className={styles.NoData}></div>
+          :
+          <>
+            <div className={styles.Chart}>
+              <ResponsiveBar data={data}/>
             </div>
-            <div className={styles.VoteOptions}>
-              <form className={styles.FormVoteOptions}>
-                {
-                  data.map(
-                    (el) => {
-                      console.log(el["name"]);
-                      return (
-                        <>
-                          <input className={styles.VoteOption} type="checkbox" key={"input_"+el["name"]} id={el["name"]} 
-                                  name={el["name"]} value={el["name"]} defaultChecked={selectedChoices.current[el["name"]]}
-                                  onChange={checkboxChangeHandler}
-                          />
-                          <label className={styles.VoteOption} htmlFor={el["name"]} key={"label_"+el["name"]}> 
-                            {window.innerWidth < 700 ? el["name"].slice(0, 5): el["name"]}
-                          </label>
-                        </>
-                      )
-                    }
-                  )
-                }            
-              </form>
+            <div className={styles.RefreshBlock}>
+              <div className={styles.LastRefreshed}>last refreshed 10 minutes ago</div>
+              <motion.button className={styles.Refresh} onClick={refreshChart}>Refresh</motion.button>
             </div>
-          </div>  
-      </>
-        
-      }
+            <div className={styles.VoteBlock}>
+              <div className={styles.VoteSubBlock}>
+                <div className={cn(styles.RegisteredVote, {[styles.Voted] : voteStatus})}>{voteStatus ? "Voted" : "Not Voted"}</div>
+                <motion.button className={cn(styles.VoteButton, {[styles.Unvotable] : !votable})} value="Voted" disabled={!votable} onClick={registerVote}>Vote!</motion.button>
+              </div>
+              <div className={styles.VoteOptions}>
+                <form className={styles.FormVoteOptions}>
+                  {
+                    data.map(
+                      (el) => {
+                        console.log(el["name"]);
+                        return (
+                          <>
+                            <input className={styles.VoteOption} type="checkbox" key={"input_"+el["name"]} id={el["name"]} 
+                                    name={el["name"]} value={el["name"]} defaultChecked={selectedChoices.current[el["name"]]}
+                                    onChange={checkboxChangeHandler}
+                            />
+                            <label className={styles.VoteOption} htmlFor={el["name"]} key={"label_"+el["name"]}> 
+                              {window.innerWidth < 700 ? el["name"].slice(0, 5): el["name"]}
+                            </label>
+                          </>
+                        )
+                      }
+                    )
+                  }            
+                </form>
+              </div>
+            </div>  
+        </>
+        }
+      {/* </div> */}
     </div>
   );
 }

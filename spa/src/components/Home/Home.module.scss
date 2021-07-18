@@ -9,6 +9,10 @@
     padding-bottom: 20px;
 }
 
+.Home.Hidden {
+    padding-top: 2px;
+}
+
 .HomeFixedTop {
     position: fixed;
     left: 0px;
@@ -19,6 +23,16 @@
     }
     background-color: $app_bg_clr;
     z-index: 5;
+}
+
+// .HomeFixedTop.Active {
+//     left: 0;
+//     transition: .2s;
+//   }
+  
+.HomeFixedTop.Hidden {
+    top: -100%;
+    transition: 1s ease-in;
 }
 
 .Home hr {
